@@ -24,3 +24,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  background-color: #ddd;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+.board-row {
+  display: flex;
+}
+
