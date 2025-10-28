@@ -24,29 +24,31 @@ body {
 }
 
 .square {
-  width: 100px;
   height: 100px;
   font-size: 40px;
   font-weight: bold;
-  color: black;
+  color: rgb(178, 175, 175);
   background-color: rgb(48, 48, 48);
   border: 2px solid #000;
   cursor: pointer;
   border-radius: 1rem;
   display: flex;
-  width: 450px;
+  width: 320px;
   align-items: center;
   justify-content: center;
+  
 }
 .board-row {
   display: flex;
+
 }
 .board-row{
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 1.5rem;
-  margin: 0.5rem;
+  /* margin: 0.5rem; */
+  box-shadow: 1px rgb(255, 255, 255);
 }
 
 
@@ -58,4 +60,123 @@ body {
   flex-direction: column;
   padding: 0.5rem;
   border-radius: 1rem;
+  height: 75vh;
+}
+
+.new_start{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  rgb(48, 48, 48);
+  height: 75vh;
+  width: 41vw;
+  border-radius: 1rem;
+  font-size: 1.7rem;  
+}
+.main_with_score{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+}
+.score{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  margin: 0rem;
+  padding: 0rem;
+}
+.score_btn{
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top:3rem ;
+  
+  & button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #535252;
+    height: 3rem;
+    font-size: 1.1rem;
+    margin-top:1rem;
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+
+  }
+}
+
+.score_card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1rem;
+}
+.X_o{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  & h1{
+    font-size: 2rem;
+  }
+  & p{
+    font-size: 1.5rem;
+  }
+}
+
+.O_shape{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #092274;
+  height: 7vh;
+  width: 3.5vw;
+  border-radius: 50%;
+  position: relative;
+}
+
+.inside_circle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5vw;
+  height: 5vh;
+  background-color:rgb(48, 48, 48) ;
+  position: absolute;
+  border-radius: 50%;
+}
+.x-shape {
+  width: 4vw;
+  height: 7vh;
+  position: relative;
+}
+
+
+
+.x-shape::after {
+  content: "";
+  position: absolute;
+  background-color: black; 
+  width: 100%; 
+  height: 5px; 
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(-45deg);
+}
+.x-shape::before{
+  content: "";
+  position: absolute;
+  background-color: black; 
+  width: 100%; 
+  height: 5px; 
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(45deg);
 }
