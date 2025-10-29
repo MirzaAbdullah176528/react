@@ -1,5 +1,4 @@
 "use client";
-import { updateTag } from "next/cache";
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -28,14 +27,18 @@ function Square({value,onSquareClick}:{value: string | null | 0; onSquareClick: 
   );
 }
 
+
 export default function Board() {
   const [xisnext , setXisNext] =useState(true)
   const [squares, setSquares] = useState(Array(9).fill(null));
   const [scores , setScores] = useState([0, 0])
+  const [oisnext , setOisNext] = useState(false)
+
+
 
   
   const winner = calculateWinner(squares)
-  
+
 
   function Set_winner(winner:any){
     setScores(prev => {
@@ -57,6 +60,7 @@ export default function Board() {
     status = `Next player : ${xisnext? 'X':'O'}`
   }
 
+
   function handleClick(i: number) {
     const nextSquares = squares.slice();
     if(nextSquares[i]){
@@ -64,13 +68,17 @@ export default function Board() {
     }
     if(xisnext){
       nextSquares[i] = 'X'
+      
     }
     else{
       nextSquares[i] = 'O'
+      
     }
     setSquares(nextSquares);
-    setXisNext(!xisnext)
+    setXisNext(!xisnext);
   }
+
+
   function if_game_end(){
     return;
   }
@@ -105,6 +113,7 @@ const btn_reset = <button onClick={Reset_score} >Resart</button>
     <div className="score_btn">
       {btn}
       {btn_reset}
+      {/* {auto_btn} */}
       </div>
     </div>
     
@@ -118,7 +127,66 @@ useEffect(() => {
 }, [winner]);
 
 
+
+
+
+
+
+
+
+let pridict = function(){
+  const empty_value = squares.map((value , index)=>(value === null? index:10)).filter(index => index !== 10)
+
+  const randomIndex = empty_value[Math.floor(Math.random() * empty_value.length)];
+
   
+   function handleClick_(i: number) {
+    const nextSquares = squares.slice();
+    if(nextSquares[i]){
+      return
+    }
+    else if(oisnext === true){
+      nextSquares[i] = 'O'
+      
+    }
+    
+    setSquares(nextSquares);
+
+  }
+
+  return randomIndex;
+
+ }
+
+const pred = pridict()
+
+  useEffect(() => {
+  if (xisnext === true ){
+    setSquares(prev => {
+      const nextSquares = [...prev];
+      nextSquares[pred] = "X";
+      setOisNext(!oisnext)
+      setXisNext(!xisnext)
+      return nextSquares;
+    });
+  }
+}, [pred, xisnext , oisnext]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   if(status.includes(winner)){
     return (
       <div className="main_with_score">
