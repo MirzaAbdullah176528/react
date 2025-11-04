@@ -10,6 +10,7 @@ function LI( {name , link }:LIprops ){
     <li><a className={link} href={link}> {name} </a></li>
 
   )
+
   }
   else{
     return(
