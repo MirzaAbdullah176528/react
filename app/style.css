@@ -288,6 +288,9 @@
   justify-content: center;
   flex-direction: column;
 }
+
+
+
 .edu{
   display: flex;
   align-items: flex-start;
