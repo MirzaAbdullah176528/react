@@ -1,5 +1,7 @@
 'use client';
 
+import { useEffect, useState } from "react";
+
 type LIprops = { name:any , link:any }
 
 function LI( {name , link }:LIprops ){
@@ -20,11 +22,16 @@ function LI( {name , link }:LIprops ){
 
 export default function Nav(){
 
-  const locationURL = window.location.href
+  const [location , setLocation] = useState('')
 
-  const locationArray = locationURL.split('/')
+  useEffect(()=>{
+    const url = window.location.href
+    const array = url.split('/')
+    const cur :any = array.at(-1)
 
-  const location = locationArray.at(-1)
+    setLocation(cur);
+  } ,[])
+
   
   console.log(location);
   
