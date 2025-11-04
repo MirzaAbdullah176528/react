@@ -79,11 +79,11 @@
     width: 100vw;
     height: 10vh;
     padding: 0vw 7vw;
-     background: linear-gradient(
-    to top,
-    rgb(11, 37, 12) -5%,  
-    rgb(28, 53, 45, 0.7 ) 80%  
-  );
+    background: linear-gradient(
+  to top,
+  rgb(11, 37, 12) -5%,  
+  rgb(28, 53, 45, 0.7 ) 80%  
+);
     & li{
         list-style: none;
         & a{
@@ -227,7 +227,7 @@
         margin: 0rem 3rem;
     }
 }
-.about{
+.about_{
     z-index: 1;
     width: 50%;
     /* position: absolute; */
@@ -318,4 +318,14 @@
  & div{
   margin-bottom: 0.2rem;
  }  
+}
+
+.home , .about , .resume{
+  background: linear-gradient(
+  to top,
+  rgb(74, 78, 74) 5%,  
+  rgb(28, 53, 45, 0.1 ) 90%  
+  );
+  padding: 0.8rem;
+  margin: 0rem;
 }

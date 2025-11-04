@@ -5,7 +5,7 @@ export default function about() {
         <main className="main-about">
             <Nav />
 
-            <div className="about">
+            <div className="about_">
 
                 <h2>About</h2>
 
