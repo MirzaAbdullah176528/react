@@ -5,7 +5,6 @@ import Edu from "../education/page"
 
 export default function Resume() {
     return(
-
         <main  className="main-resume" style={{width:'100%', height:'100vh' , display:'flex' ,alignItems:'center' , justifyContent:'center' , flexDirection:'column'  }}>
             < Nav />
         <div className="main-resume">
