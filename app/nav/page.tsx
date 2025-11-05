@@ -9,7 +9,7 @@ function LI( {name , link }:LIprops ){
   if(name === link){
   return(
 
-    <li><a className={link} href={link}> {name} </a></li>
+    <li><a style={{padding:'3.3vh 0rem' , margin:'0rem' }} className={link} href={link}> {name} </a></li>
 
   )
   }
