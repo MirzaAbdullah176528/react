@@ -424,7 +424,7 @@
 
 }
 
-@media screen and (max-height:1100px) and (min-height:400px) and (max-width:600px) and (min-width:100px) {
+@media screen and (max-height:1100px) and (min-height:400px) and (max-width:850px) and (min-width:100px) {
 
         .main-resume{
           position: absolute;
@@ -436,4 +436,12 @@
           top: 15%;
         }
   
+}
+
+@media screen and (max-height:700px) and (min-height:100px) and (max-width:850px) and (min-width:100px){
+
+        .main-about{
+          position: absolute;
+          top: 35%;
+        }
 }
