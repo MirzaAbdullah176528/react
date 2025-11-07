@@ -10,8 +10,8 @@ export default function Edu( { time , place , role }:eduProbs ){
             </div>
 
             <div className="edu-place">
-                <h2>{place}</h2>
-                <p>{role}</p>
+                <h2 className="edu-text">{place}</h2>
+                <p className="edu-text">{role}</p>
             </div>
 
         </div>

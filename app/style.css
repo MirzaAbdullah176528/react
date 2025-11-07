@@ -37,8 +37,8 @@
   bottom: -5px;
   background-image:url(../public/about-sec-bg.jpeg) ;
   background-size: cover;
-  background-position: center;
-  filter: blur(7px);       
+  background-position: center; 
+  filter: grayscale(1);      
   z-index: 0;
 }
 
@@ -176,12 +176,12 @@
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translate(50%, -50%);
-  width: 0.5rem;
-  height: 0.5rem;
+  transform: translate( -50%);
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
   background: #1f5785;
-  box-shadow: 0 0 6px #1C352D
+  border: 3px solid rgb(67, 91, 96);
 }
 
 
@@ -216,7 +216,9 @@
         align-items: center;
         justify-content: center;
         width: 80%;
-        height: 100vh;
+        height: 75vh;
+        margin-top: 5%;
+        
 
         & div{
 
@@ -258,6 +260,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      width: 100vw;
     }
 }
 
@@ -291,6 +294,12 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+
+  & h2{
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+  }
 }
 .edu{
   display: flex;
@@ -380,6 +389,15 @@
       flex-direction: column;
     }
 
+      .resume-sec1{
+        width: 100vw;
+      }
+
+      .main-progress{
+        width: 100vw;
+      }
+
+
       .main-progress{
         display: flex;
         align-items: center;
@@ -443,6 +461,15 @@
         justify-content: center;
         flex-direction: column;
       }
+
+      .resume-sec1{
+        width: 100vw;
+      }
+
+      .main-progress{
+        width: 100vw;
+      }
+
 
 }
 

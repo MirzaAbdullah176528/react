@@ -6,9 +6,17 @@ export default function about() {
             <Nav />
 
             <div className="about-sec">
+
+                <div>
+                    
+                </div>
+
                 <div className="about_">
 
-                    <h2>About</h2>
+                <div>
+                    <h2>ABDULLAH HASSAN</h2>
+                    <p>Web developer</p>
+                </div>
 
                     <p>I am a passionate web developer driven by the pursuit
                     of creating clean, scalable, and high-performing 
@@ -25,12 +33,6 @@ export default function about() {
 
                 </div>
 
-                <div>
-                    <div className="pic">
-                    <img className="frame" src="black-circle-svgrepo-com.svg" alt="" />
-                    <img className="avatar" src="avatar.jpg" alt="" />
-                    </div>
-                </div>
             </div>     
         </main>
     )
