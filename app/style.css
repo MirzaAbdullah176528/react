@@ -2,7 +2,7 @@
     margin: 0rem;
     padding: 0rem;
     box-sizing: border-box;
-    color: #F4F4F4;
+    color: #EFECE3;
     border: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
@@ -35,10 +35,10 @@
   left: -5px;
   right: -5px;
   bottom: -5px;
-  background-image:url(../public/about-background.jpeg);
+  background-image:url(../public/about-sec-bg.jpeg) ;
   background-size: cover;
   background-position: center;
-  filter: blur(5px);       
+  filter: blur(7px);       
   z-index: 0;
 }
 
@@ -75,13 +75,12 @@
     z-index: 2;
     top: 0;
     width: 100vw;
-    /* height: 10vh; */
     padding: 3vh 7vw;
     background: linear-gradient(
-  to top,
-  rgb(11, 37, 12) -5%,  
-  rgb(28, 53, 45, 0.7 ) 80%  
-);
+    to top,
+    rgb(74, 112, 169) -5%,  
+    rgb(36, 48, 50) 80%  
+  );
     & li{
         list-style: none;
         & a{
@@ -129,10 +128,10 @@
             font-size: 1rem;
             border-radius: 1rem;            
             background: linear-gradient(
-            to top,
-            rgb(166, 178, 139 , 1) -5%,  
-            rgb(28, 53, 45, 0.7 ) 80%  
-            );
+    to top,
+    rgb(74, 112, 169) -5%,  
+    rgb(36, 48, 50) 80%  
+  );
         }
     }
 }
@@ -160,15 +159,14 @@
 .progress-bar {
   width: 30vw;
   height: 6px;
-  background: #1f2937;       
+  background: #34363a;       
   border-radius: 10px;
-  overflow: hidden;
   position: relative;  
 }
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #1C352D, #1C352D); 
+  background: linear-gradient(90deg, #1c2d35, #567494); 
   border-radius: 10px;
   position: relative;
   transition: width 1s ease-in-out;                      
@@ -179,10 +177,10 @@
   right: 0;
   top: 50%;
   transform: translate(50%, -50%);
-  width: 1rem;
-  height: 1rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
-  background: #fff;
+  background: #1f5785;
   box-shadow: 0 0 6px #1C352D
 }
 
@@ -277,7 +275,11 @@
   height: 5rem;
   padding: 0.5rem;
   border-radius: 50%;
-  background-color: #1f2937;
+  background: linear-gradient(
+  to top,
+  rgb(143, 171, 212) 5%,  
+  rgba(74, 112, 169, 0.1) 90%  
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -328,6 +330,26 @@
   );
   padding: 3vh 0vw;
   margin: 0rem;
+}
+
+.pic{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   
+  & .frame{
+    width: 15rem;
+    height: 15rem;
+  }
+}
+.avatar{
+  position: absolute;
+  width: 15rem;
+  opacity: 0.7;
+  height: 15rem;
+  border-radius: 50%;
+
 }
 
 

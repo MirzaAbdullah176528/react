@@ -25,10 +25,13 @@ export default function about() {
 
                 </div>
 
-                <div className="pic">
-                        <img className="pic" src="black-circle-svgrepo-com.svg" alt="" />
+                <div>
+                    <div className="pic">
+                    <img className="frame" src="black-circle-svgrepo-com.svg" alt="" />
+                    <img className="avatar" src="avatar.jpg" alt="" />
+                    </div>
                 </div>
-            </div>        
+            </div>     
         </main>
     )
 }

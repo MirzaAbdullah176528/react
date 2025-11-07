@@ -15,14 +15,14 @@ export default function Resume() {
                 
                 <div className="resume-sec1-sub">
 
-                    <h2>Programming Languages</h2>
+                    <h2 style={{textDecoration:'underline'}}>Programming Languages</h2>
             
                     <div>
                         < Progress value={100} skill="HTML" />
                         < Progress value={80} skill="CSS"  />
                         < Progress value={85} skill="JS"   />
                         < Progress value={50} skill="React"/>
-                        < Progress value={50} skill="TypeScript" />
+                        < Progress value={50} skill="TS" />
 
                     </div>
 
@@ -30,7 +30,7 @@ export default function Resume() {
 
                 <div className="resume-sec1-sub">
 
-                    <h2>Languages</h2>
+                    <h2 style={{textDecoration:'underline'}}>Languages</h2>
 
                     <div>
                     <Progress value={70} skill="English" />
@@ -44,12 +44,13 @@ export default function Resume() {
 
             <div className="edu">
 
-                <h2>Education</h2>
+                <h2 style={{textDecoration:'underline'}}>Education</h2>
                 <div className="edu-on-page">
                 
+                < Edu time='Present' place='Whites Technology' role='Web-Developer (Internship)' />
+                < Edu time='2024-Pr' place='Concordia Collage F.S.D' role='Intermidiate Student' />
                 < Edu time='2022-2023' place='Govt. Cresient School' role='Marticulation Student' />
-                 < Edu time='2024-Pr' place='Concordia Collage F.S.D' role='Intermidiate Student' />
-                 < Edu time='Present' place='Whites Technology' role='Web-Developer (Internship)' />
+                
 
                 </div>
 

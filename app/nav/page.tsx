@@ -2,20 +2,20 @@
 
 import { useEffect, useState } from "react";
 
-type LIprops = { name:any , link:any }
+type LIprops = { name:string , link:any }
 
 function LI( {name , link }:LIprops ){
 
   if(name === link){
   return(
 
-    <li><a style={{padding:'3.3vh 0.4rem' , margin:'0rem' }} className={link} href={link}> {name} </a></li>
+    <li><a style={{padding:'3.3vh 0.2rem' , margin:'0rem' }} className={link} href={link}> {name.toUpperCase()} </a></li>
 
   )
   }
   else{
     return(
-      <li><a style={{padding:'3.3vh 0.4rem' }} href={name}> {name} </a></li>
+      <li><a style={{padding:'3.3vh 0.2rem'}} href={name}> {name.toUpperCase()} </a></li>
     )
   }
 }
@@ -41,7 +41,7 @@ export default function Nav(){
       <ul className="nav">
         <LI name="home" link={location} />
         <LI name='about' link={location} />
-        <LI name='resume' link={location}  />
+        <LI name='resume' link={location} />
       </ul>
 
   )
