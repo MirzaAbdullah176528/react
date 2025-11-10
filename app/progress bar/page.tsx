@@ -1,4 +1,4 @@
-type ProgressProps = {value:number , skill:string , num:number;}
+type ProgressProps = {value:number , skill:string , num:string;}
 
 
 export default function Progress({ value , skill , num}: ProgressProps ){
@@ -20,14 +20,14 @@ export default function Progress({ value , skill , num}: ProgressProps ){
             </div>
 
             <div>
-                <p style={{color:'#8FABD4', 
-                        border:'1px solid #8FABD4',
+                <h1 style={{color:'#8FABD4', 
                         width:'100%',
                         display:'flex',
                         alignItems:'center',
                         justifyContent:'center', 
                         padding:'0.2rem',
-                        borderRadius:'0.5rem'}}>{num}</p>
+                        fontWeight:'100',
+                        boxShadow:'1px 1px 5px #272727ff'}}>{num}</h1>
             </div>
         </div>
     )

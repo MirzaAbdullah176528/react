@@ -18,11 +18,11 @@ export default function Resume() {
                     <h2 style={{textDecoration:'underline'}}>Programming Languages</h2>
             
                     <div>
-                        < Progress value={100} skill="HTML" num={99}/>
-                        < Progress value={80} skill="CSS"  num={70} />
-                        < Progress value={85} skill="JS"  num={75} />
-                        < Progress value={50} skill="React" num={45} />
-                        < Progress value={50} skill="TS" num={50} />
+                        < Progress value={100} skill="HTML" num='10/10'/>
+                        < Progress value={80} skill="CSS"  num="08/10" />
+                        < Progress value={85} skill="JS"  num="07/10" />
+                        < Progress value={50} skill="React" num="04/10" />
+                        < Progress value={50} skill="TS" num="05/10" />
 
                     </div>
 
@@ -33,8 +33,8 @@ export default function Resume() {
                     <h2 style={{textDecoration:'underline'}}>Languages</h2>
 
                     <div>
-                    <Progress value={70} skill="ENG" num={70} />
-                    <Progress value={100} skill="Urdu" num={99} />
+                    <Progress value={70} skill="ENG" num="07/10" />
+                    <Progress value={100} skill="Urdu" num="10/10" />
                     </div>
 
                 </div>

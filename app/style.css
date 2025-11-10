@@ -20,6 +20,7 @@
   left: -5px;
   right: -5px;
   bottom: -5px;
+  background-color: #000000;
   background-image:url(../public/background.jpeg) ;
   background-size: cover;
   background-position: center;
@@ -35,6 +36,7 @@
   left: -5px;
   right: -5px;
   bottom: -5px;
+  background-color: #000000;
   background-image:url(../public/about-sec-bg.jpeg) ;
   background-size: cover;
   background-position: center; 
@@ -56,6 +58,7 @@
   left: -5px;
   right: -5px;
   bottom: -5px;
+  background-color: #000000;
   background-image:url(../public/resume.jpeg);
   background-size: cover;
   background-position: center;
