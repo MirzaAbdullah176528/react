@@ -7,14 +7,11 @@ export default function about() {
 
             <div className="about-sec">
 
-                <div>
-                    
-                </div>
 
                 <div className="about_">
 
                 <div>
-                    <h2>ABDULLAH HASSAN</h2>
+                    <h5>Hi! I'm</h5>
                     <p>Web developer</p>
                 </div>
 
@@ -27,10 +24,15 @@ export default function about() {
                     and React, with a strong commitment to writing 
                     structured, maintainable code.</p>
 
-                    <p>I believe every project should deliver both
-                    technical efficiency and an intuitive user
-                    experience.</p>
+                    <div style={{padding:'0rem', margin:'1rem 0rem 0rem 0rem'  }} className="detail-btn">
+                        <button style={{background:'linear-gradient( to bottom, rgb(197, 197, 198) -5%,  rgb(37, 38, 38) 80%  )' }}><a style={{ textDecoration: 'none', fontSize: '1rem', }} href="resume">Resume</a></button>
+                    </div>
 
+                </div>
+
+
+                <div className="profile">
+                    <img src="avatar.svg" alt="" />
                 </div>
 
             </div>     

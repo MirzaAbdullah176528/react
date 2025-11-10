@@ -1,5 +1,5 @@
-import "./style.css"
-import Nav from "./nav/page"
+import "../style.css"
+import Nav from "../nav/page"
 
 
 function Name() {
