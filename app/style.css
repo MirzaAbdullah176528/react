@@ -8,6 +8,10 @@
     font-size: 1.3rem;
     z-index: 1;
 }
+
+body{
+  background-color: #000000;
+}
 .main {
   position: relative;
   width: 100%;
@@ -107,7 +111,8 @@
     & h1{
         font-size: 4rem;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        padding: 0rem 1rem;
+        padding: 0rem 0.8rem;
+        margin: 0rem;
     }
     & h2{
         font-size: 2rem;
@@ -126,7 +131,7 @@
 display: flex;
 align-items: flex-start;
 justify-content: flex-start;
-padding: 0rem 1refm;
+padding: 0rem 0.8rem;
 gap: 1rem;
 
 & button{
@@ -323,12 +328,6 @@ rgb(36, 48, 50) 80%
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-
-  & h2{
-    display: flex;
-    align-items: space-between;
-    justify-content: space-between;
-  }
 }
 .edu{
   display: flex;
@@ -339,13 +338,16 @@ rgb(36, 48, 50) 80%
   margin: 0rem  2rem ;
 
   & h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
   }
+
 }
 
+.edu-text{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 
 .edu-on-page{
   display: flex;
