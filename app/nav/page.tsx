@@ -9,11 +9,8 @@ function LI( {name , link }:LIprops ){
 
   if(name === link){
   return(
-
     <li><Link style={{padding:'3.3vh 0.2rem' , margin:'0rem' }} className={link} href={link}> {name.toUpperCase()} </Link></li>
-
-  )
-  }
+  )}
   else{
     return(
       <li><Link style={{padding:'3.3vh 0.2rem'}} href={name}> {name.toUpperCase()} </Link></li>

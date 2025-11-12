@@ -41,10 +41,10 @@ body{
   right: -5px;
   bottom: -5px;
   background-color: #000000;
-  background-image:url(../public/about-sec-bg.jpeg) ;
+  background-image:url(../public/YouTube.jpeg);
   background-size: cover;
   background-position: center; 
-  filter: grayscale(1);      
+  filter: blur(5px);      
   z-index: 0;
 }
 
@@ -230,22 +230,24 @@ rgb(36, 48, 50) 80%
         width: 80%;
         height: 75vh;
         margin-top: 5%;
-        background: linear-gradient(
-        to top,
-        rgb(197, 197, 198) -5%,  
-        rgb(37, 38, 38) 80%  
-        );
+        background:linear-gradient(
+                                    to top,
+                                    rgb(74, 112, 169) -5%,  
+                                    rgb(36, 48, 50) 80%  
+                                    );
+        opacity: 0.5;
+        box-shadow: 1px 1px 20px black;
         border-radius: 1rem;
 
         & div{
           & p{
-            text-align: justify;
-            color: rgb(5, 5, 5);
+            text-align: left;
           }
         }
       }
 
 }
+
 .about_{
     z-index: 1;
     width: 50%;
@@ -269,7 +271,7 @@ rgb(36, 48, 50) 80%
     }
       & p{
           text-align: left;
-          margin-top: 1rem;
+          margin-top: 1rem; 
           z-index: 1;
           font-size: 0.8rem;
       }

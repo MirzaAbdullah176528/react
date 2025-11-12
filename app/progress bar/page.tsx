@@ -27,7 +27,8 @@ export default function Progress({ value , skill , num}: ProgressProps ){
                         justifyContent:'center', 
                         padding:'0.2rem',
                         fontWeight:'100',
-                        boxShadow:'1px 1px 5px #272727ff'}}>{num}</h1>
+                        boxShadow:'1px 1px 5px #272727ff',
+                        borderRadius:'0.5rem'}}>{num}</h1>
             </div>
         </div>
     )
