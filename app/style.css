@@ -84,8 +84,8 @@ body{
     text-decoration: none;
     z-index: 2;
     top: 0;
-    width: 100vw;
-    padding: 3vh 7vw;
+    width: 100%;
+    padding: 1rem 5rem;
     background: linear-gradient(
     to top,
     rgb(74, 112, 169) -5%,  
@@ -262,12 +262,12 @@ rgb(36, 48, 50) 80%
 
       & p{
         font-size: 200%;
-        color: #a0a0a0 !important;
+        color: #fff !important;
       }
 
       & h5{
         font-size: 80%;
-        color:rgb(175, 175, 175) ;
+        color:#ffffff ;
         margin: -1rem 0rem;
       }
     }
@@ -347,7 +347,6 @@ rgb(36, 48, 50) 80%
     align-items: center;
     justify-content: center;
   }
-
 }
 
 .edu-text{
@@ -369,14 +368,15 @@ rgb(36, 48, 50) 80%
  }  
 }
 
+
 .home , .about , .resume{
   background: linear-gradient(
   to top,
   rgb(74, 78, 74) 5%,  
   rgb(28, 53, 45, 0.1 ) 90%  
   );
-  padding: 3vh 0vw;
-  margin: 0rem;
+  border-radius: 10%;
+  padding: 1.1rem 1rem;
 }
 
 .pic{
@@ -426,6 +426,8 @@ rgb(36, 48, 50) 80%
       font-size: 13px;
       }
     }
+
+    
 
 }
 
@@ -490,6 +492,15 @@ rgb(36, 48, 50) 80%
         justify-content: center;
         flex-direction: column;
       }
+
+      .nav{
+        padding: 0.7rem 1rem;
+      }
+
+      .home , .about , .resume{
+        padding: 0.8rem 1rem;
+        font-size: 0.5rem;
+      }
 }
 
 
@@ -500,6 +511,17 @@ rgb(36, 48, 50) 80%
         align-items: center;
         justify-content: center;
         flex-direction: column;
+      }
+         .nav{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          padding: 0.5rem 0.5rem;
+      }
+
+      .home , .about , .resume , .other{
+        padding: 0.6rem 0.5rem !important;
       }
 
       .about-sec{

@@ -25,11 +25,10 @@ export default function about() {
                     structured, maintainable code.</p>
 
                     <div style={{padding:'0rem', margin:'1rem 0rem 0rem 0rem'  }} className="detail-btn">
-                        <button><a style={{ textDecoration: 'none', fontSize: '1rem', }} href="resume">Resume</a></button>
+                        <button><a style={{ textDecoration: 'none', fontSize: '1rem', color:'#fff' }} href="resume">Resume</a></button>
                     </div>
 
                 </div>
-
 
                 <div className="profile">
                     <img src="avatar.svg" alt="" />
