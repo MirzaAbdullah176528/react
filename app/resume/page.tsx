@@ -3,7 +3,25 @@ import Progress from "../progress bar/page"
 import Edu from "../education/page"
 
 
+
 export default function Resume() {
+
+        function skills(){
+            const names = {
+            HTML:"10/10",
+            CSS:'08/10',
+            JS:"07/10",
+            React:"04/10",
+            TS:'05/10'
+            }
+            return(
+            <>
+            {Object.entries(names).map(([sName , value ]) => (
+            <Progress skill={sName} value={parseInt(value)*10} num={value}/>
+            ))}
+            </>
+            )
+        }
     return(
         <main  className="main-resume" style={{width:'100%', height:'100vh' , display:'flex' ,alignItems:'center' , justifyContent:'center' , flexDirection:'column'  }}>
         
@@ -18,12 +36,7 @@ export default function Resume() {
                     <h2 style={{textDecoration:'underline'}}>Programming Languages</h2>
             
                     <div>
-                        < Progress value={100} skill="HTML" num='10/10'/>
-                        < Progress value={80} skill="CSS"  num="08/10" />
-                        < Progress value={85} skill="JS"  num="07/10" />
-                        < Progress value={50} skill="React" num="04/10" />
-                        < Progress value={50} skill="TS" num="05/10" />
-
+                        {skills()}
                     </div>
 
                 </div>
